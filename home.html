@@ -1,39 +1,151 @@
-
-<!doctype html><html><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <title>Abdullah Trade & Co.</title>
-<link rel='stylesheet' href='styles.css'>
-</head><body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #0b3c5d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  color: #0b3c5d;
+  margin-bottom: 15px;
+}
+
+/* Services */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.service-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+/* Contact */
+.contact-box {
+  background: #f1f5f9;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+/* Form */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+button {
+  background: #0b5ed7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* WhatsApp */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
 
 <header>
-<img src='assets/logo.jpg'>
-<h1>ABDULLAH TRADE & CO.</h1>
-<p>General Suppliers & Consultants</p>
-<nav>
-<a href='index.html'>Home</a>
-<a href='about.html'>About</a>
-<a href='services.html'>Services</a>
-<a href='contact.html'>Contact</a>
-</nav>
+  <img src="images/logo.png" width="80"><br>
+  <h1>Abdullah Trade & Co.</h1>
+  <p>General Suppliers & Consultants</p>
 </header>
 
-<div class='hero'>
-<h1>Your Trusted Partner for Supply & Consultancy</h1>
-<p>We deliver high-quality general supplies and professional consultancy services with accuracy, compliance and reliability across Bangladesh.</p>
-</div>
+<section>
+  <h2>About Us</h2>
+  <p>
+    Abdullah Trade & Co. is a professional firm providing General Supply
+    and Consultancy services including company registration, trade license,
+    VAT & TAX support, and government documentation.
+  </p>
+</section>
 
-<div class='section'>
-<div class='card'>
-<h2>Our Core Expertise</h2>
-<ul>
-<li>General Supply for Government, Semi-Govt, NGOs & Private Sector</li>
-<li>RJSC Registration, Amendments & Return Filing</li>
-<li>IRC, ERC, Trade License, Fire License Processing</li>
-<li>Tax & VAT Consultancy (TIN, BIN, VAT, Income Tax)</li>
-<li>Audit, Accounts Management & Financial Reporting</li>
-</ul>
-</div>
-</div>
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service-box">Company Registration & Trademark</div>
+    <div class="service-box">Trade License & Partnership Firm</div>
+    <div class="service-box">Income Tax, VAT & Audit Support</div>
+    <div class="service-box">RJSC, IRC & ERC Registration</div>
+    <div class="service-box">NGO / Society / Trust Registration</div>
+    <div class="service-box">General Supply & Consultancy</div>
+  </div>
+</section>
 
-<footer>© 2025 Abdullah Trade & Co.</footer>
-</body></html>
+<section>
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p>
+      📞 Phone: +88 01684-169490<br>
+      ✉️ Email: abdullahtradec@gmail.com
+    </p>
+
+    <!-- Contact Form -->
+    <form action="https://formsubmit.co/abdullahtradec@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <!-- Security -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="thankyou.html">
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<section>
+  <h2>Our Location</h2>
+  <iframe
+    src="https://www.google.com/maps?q=Dhaka,Bangladesh&output=embed"
+    width="100%" height="300" style="border:0;" loading="lazy">
+  </iframe>
+</section>
+
+<a class="whatsapp" href="https://wa.me/8801684169490" target="_blank">
+  WhatsApp
+</a>
+
+</body>
+</html>
+
